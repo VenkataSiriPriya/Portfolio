@@ -11,12 +11,14 @@ const HeroSection = () => {
 
   // Static content
   const content = {
-    name: "John Doe",
-    role: "Full Stack Developer",
-    description: "I craft exceptional digital experiences through clean code and thoughtful design. Specializing in modern web technologies like React and Tailwind CSS, I transform ideas into elegant, user-centered solutions.",
+    name: "SiriPriya",
+    role: "Student",
+    description: "I craft exceptional digital experiences through clean code and thoughtful design. Specializing in modern web technologies. I transform ideas into elegant, user-centered solutions.",
     sections: [
-      { name: 'Home', href: '#home' },
+      { name: 'AboutMe', href: '/about' },
+      { name: 'Certifications', href: '/certificates' },
       { name: 'Projects', href: '#projects' },
+      { name: 'Github', href: "https://github.com/VenkataSiriPriya" },
       { name: 'Contact', href: '#contact' }
     ]
   };
@@ -170,7 +172,7 @@ const HeroSection = () => {
               className="flex flex-col sm:flex-row gap-4"
             >
               <a
-                href={content.sections[1].href}
+                href="#projects"
                 className="inline-flex items-center justify-center px-8 py-4 rounded-full font-semibold text-white transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105"
                 style={{
                   background: `linear-gradient(135deg, ${primaryColor}, ${accentColor})`,
@@ -178,26 +180,6 @@ const HeroSection = () => {
                 }}
               >
                 View My Work
-              </a>
-              <a
-                href={content.sections[2].href}
-                className="inline-flex items-center justify-center px-8 py-4 rounded-full font-semibold border-2 transition-all duration-300 hover:scale-105"
-                style={{
-                  borderColor: primaryColor,
-                  color: primaryColor,
-                }}
-                onMouseEnter={(e) => {
-                  e.target.style.background = `linear-gradient(135deg, ${primaryColor}, ${accentColor})`;
-                  e.target.style.color = 'white';
-                  e.target.style.borderColor = 'transparent';
-                }}
-                onMouseLeave={(e) => {
-                  e.target.style.background = 'transparent';
-                  e.target.style.color = primaryColor;
-                  e.target.style.borderColor = primaryColor;
-                }}
-              >
-                Get In Touch
               </a>
             </motion.div>
 
@@ -228,6 +210,16 @@ const HeroSection = () => {
               >
                 Node.js
               </span>
+             <span 
+                className="px-4 py-2 rounded-full text-sm font-medium border"
+                style={{
+                  backgroundColor: `${primaryColor}1A`,
+                  color: primaryColor,
+                  borderColor: `${primaryColor}33`
+                }}
+              >
+                Linux
+              </span>
               <span 
                 className="px-4 py-2 rounded-full text-sm font-medium border"
                 style={{
@@ -236,7 +228,17 @@ const HeroSection = () => {
                   borderColor: `${primaryColor}33`
                 }}
               >
-                Full Stack
+                JavaScript
+              </span>
+               <span 
+                className="px-4 py-2 rounded-full text-sm font-medium border"
+                style={{
+                  backgroundColor: `${primaryColor}1A`,
+                  color: primaryColor,
+                  borderColor: `${primaryColor}33`
+                }}
+              >
+                Django
               </span>
             </motion.div>
           </motion.div>

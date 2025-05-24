@@ -1,31 +1,51 @@
 // src/components/ContactSection.jsx
 import React from 'react';
+import { FaLinkedin, FaInstagram, FaEnvelope } from 'react-icons/fa';
 
 const ContactSection = () => {
-  const primaryColor = '#06B6D4'; // cyan-500
-  const accentColor = '#0891B2';  // cyan-600
-
   return (
-    <section id="contact" className="bg-black py-16 px-4 text-center">
+    <section id="contact" className="bg-black py-16 px-6 text-center">
       <h2
-        className="text-3xl font-bold mb-6"
-        style={{
-          background: `linear-gradient(90deg, ${primaryColor}, ${accentColor})`,
-          WebkitBackgroundClip: 'text',
-          WebkitTextFillColor: 'transparent',
-        }}
+        className="text-4xl md:text-5xl font-extrabold mb-6 bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent"
       >
         Get in Touch
       </h2>
-      <p className="text-cyan-300 mb-4">
-        Want to work together or have questions?
+      <p className="text-cyan-300 text-lg mb-10">
+        Let’s connect — whether it’s to collaborate or just say hello!
       </p>
-      <a
-        href="mailto:your.email@example.com"
-        className="inline-block px-6 py-2 bg-cyan-600 text-white rounded-full hover:bg-cyan-700 transition"
-      >
-        Say Hello
-      </a>
+
+      <div className="flex justify-center gap-6">
+        {/* Email */}
+        <a
+          href="mailto:2300030401@kluniversity.in"
+          className="text-white hover:text-cyan-400 text-2xl transition duration-300"
+          aria-label="Email"
+        >
+          <FaEnvelope />
+        </a>
+
+        {/* LinkedIn */}
+        <a
+          href="https://www.linkedin.com/in/venkata-siripriya-m-710142281/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-white hover:text-cyan-400 text-2xl transition duration-300"
+          aria-label="LinkedIn"
+        >
+          <FaLinkedin />
+        </a>
+
+        {/* Instagram */}
+        <a
+          href="https://www.instagram.com/yourprofile"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-white hover:text-cyan-400 text-2xl transition duration-300"
+          aria-label="Instagram"
+        >
+          <FaInstagram />
+        </a>
+      </div>
     </section>
   );
 };
