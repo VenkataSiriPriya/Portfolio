@@ -3,28 +3,22 @@ import { Link } from 'react-router-dom'; // If using React Router
 
 const certifications = [
   {
-    title: 'Python Full Stack Development',
-    issuer: 'Internshala',
-    year: '2024',
-    link: 'https://example.com/certificate1',
-  },
-  {
-    title: 'Frontend Development with React.js',
+    title: 'Meta Front-End Developer',
     issuer: 'Coursera',
-    year: '2024',
-    link: 'https://example.com/certificate2',
+    year: '2025',
+    link: 'https://www.coursera.org/account/accomplishments/specialization/9EIIWWH7QPEQ',
   },
   {
-    title: 'Git & GitHub Mastery',
-    issuer: 'Udemy',
-    year: '2023',
-    link: 'https://example.com/certificate3',
+    title: 'Spring Framework',
+    issuer: 'Coursera',
+    year: '2025',
+    link: 'https://www.coursera.org/account/accomplishments/specialization/DYZMUUZHNA5J',
   },
   {
-    title: 'PostgreSQL for Developers',
-    issuer: 'Great Learning',
-    year: '2024',
-    link: 'https://example.com/certificate4',
+    title: 'MongoDB Aggregation with Node.js',
+    issuer: 'MongoDB',
+    year: '2025',
+    link: 'https://ti-user-certificates.s3.amazonaws.com/ae62dcd7-abdc-4e90-a570-83eccba49043/a4bfcdc7-238b-483f-b178-adda99f961c3-mallu-venkata-siripriya-67b5914e-4e10-4d03-9c8e-e386362235a6-certificate.pdf',
   },
 ];
 
