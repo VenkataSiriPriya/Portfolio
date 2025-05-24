@@ -11,3 +11,90 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.perspective {
+  perspective: 1000px;
+}
+.transform-style {
+  transform-style: preserve-3d;
+}
+.backface-hidden {
+  backface-visibility: hidden;
+}
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}
+
+/* Neon glowing animated border for the section */
+.neon-border {
+  animation: neonPulse 2s ease-in-out infinite alternate;
+  box-shadow:
+    0 0 8px #00ffff,
+    0 0 16px #00ffff,
+    0 0 24px #00ffff,
+    0 0 40px #00ffff;
+}
+
+@keyframes neonPulse {
+  0% {
+    box-shadow:
+      0 0 6px #00ffff,
+      0 0 12px #00ffff,
+      0 0 18px #00ffff,
+      0 0 28px #00ffff;
+  }
+  100% {
+    box-shadow:
+      0 0 14px #00ffff,
+      0 0 24px #00ffff,
+      0 0 34px #00ffff,
+      0 0 48px #00ffff;
+  }
+}
+
+/* Neon glowing photo radiations */
+.neon-photo {
+  animation: neonGlow 3s ease-in-out infinite alternate;
+  box-shadow:
+    0 0 10px #00ffff,
+    0 0 20px #00ffff,
+    0 0 30px #00ffff,
+    0 0 40px #00ffff;
+  border: 4px solid #00ffff;
+}
+
+@keyframes neonGlow {
+  0% {
+    box-shadow:
+      0 0 8px #00ffff,
+      0 0 18px #00ffff,
+      0 0 28px #00ffff,
+      0 0 36px #00ffff;
+  }
+  100% {
+    box-shadow:
+      0 0 14px #00ffff,
+      0 0 28px #00ffff,
+      0 0 38px #00ffff,
+      0 0 48px #00ffff;
+  }
+}
+
+/* Backface hidden fix for flip */
+.backface-hidden {
+  backface-visibility: hidden;
+}
+
+/* Preserve 3d transform */
+.transform-style {
+  transform-style: preserve-3d;
+}
+
+/* Rotate Y 180 deg */
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}
